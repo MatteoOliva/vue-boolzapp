@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+#app {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+}
+
+header  {
+border: 1px dotted black;
+background-color: rgb(219, 191, 221);
+height: 50px;
+width: 100% ;
+margin: auto;
+
+
+}
+
+.header-leftleft {
+    border: 1px dotted black;
+
+}
+
+.header-left {
+border: 1px dotted black;
+}
+
+.header-leftright {
+border: 1px dotted black;
+}
+
+.header-right {
+border: 1px dotted black;
+}
+
+.header-rightleft {
+border: 1px dotted black;
+}
+
+.header-rightright {
+border: 1px dotted black;
+}
+
+.container {
+border: 3px dotted black;
+margin: auto;
+width: 100%;
+height: 100%;
+
+display: flex;
+}
+
+.contatti {
+border: 1px dotted black;
+}
+
+.notifiche {
+border: 1px dotted black;
+}
+
+.barradiricerca {
+border: 1px dotted black;
+}
+
+.pulsante {
+border: 1px dotted black;
+}
+
+.testo {
+border: 1px dotted black;
+}
+
+.listacontatti {
+border: 1px dotted black;
+}
+
+.img {
+border: 1px dotted black;
+}
+
+.nomecontatto {
+border: 1px dotted black;
+}
+
+.dataultimomessaggio {
+border: 1px dotted black;
+}
+
+.chat {
+border: 1px dotted black;
+}
+
+.chat-up {
+border: 1px dotted black;
+}
+
+.messaggi-inviati {
+border: 1px dotted black;
+}
+
+.messaggi-ricevuti {
+border: 1px dotted black;
+}
+
+.chat-down {
+border: 1px dotted black;
+}
+
+.chat-downleft {
+border: 1px dotted black;
+}
+
+.chat-downmiddle {
+border: 1px dotted black;
+}
+
+.chat-downright {
+border: 1px dotted black;
+
+}
