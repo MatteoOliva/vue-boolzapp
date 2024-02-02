@@ -180,7 +180,7 @@ display: flex;
 
     border: 1px dotted black;
     background-color: pink;
-    height: 90%;
+    height: 92%;
     width: 100%;
     display: flex;
     align-items: end;
@@ -241,19 +241,46 @@ display: flex;
 .chat-down {
 
     border: 1px dotted black;
-    height: 10%;
+    height: 8%;
     width: 100%;
+    background-color: rgb(227, 208, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .chat-downleft {
     border: 1px dotted black;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .chat-downmiddle {
     border: 1px dotted black;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .chat-downright {
     border: 1px dotted black;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
 
+.digita {
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
 }
