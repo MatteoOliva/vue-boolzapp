@@ -131,70 +131,129 @@ display: flex;
 }
 
 .contatti {
-border: 1px dotted black;
+    border: 1px dotted black;
+    width: 35%;
+    height: 100%;
 }
 
 .notifiche {
-border: 1px dotted black;
+    border: 1px dotted black;
 }
 
 .barradiricerca {
-border: 1px dotted black;
+    border: 1px dotted black;
 }
 
 .pulsante {
-border: 1px dotted black;
+    border: 1px dotted black;
 }
 
 .testo {
-border: 1px dotted black;
+    border: 1px dotted black;
 }
 
 .listacontatti {
-border: 1px dotted black;
+    border: 1px dotted black;
 }
 
 .img {
-border: 1px dotted black;
+    border: 1px dotted black;
 }
 
 .nomecontatto {
-border: 1px dotted black;
+    border: 1px dotted black;
 }
 
 .dataultimomessaggio {
-border: 1px dotted black;
+    border: 1px dotted black;
 }
 
 .chat {
-border: 1px dotted black;
+    border: 1px dotted black;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .chat-up {
-border: 1px dotted black;
+
+    border: 1px dotted black;
+    background-color: pink;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+}
+.boxmessaggi {
+    width: 75%;
+    height: 90%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.messaggi-inviati {
-border: 1px dotted black;
+
+.messaggio-inviato, .messaggio-ricevuto{
+
+    border: 1px dotted black;
+    text-overflow: ellipsis;
+    height: 45px;
+    min-width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 8px;
+    
+    
 }
 
-.messaggi-ricevuti {
-border: 1px dotted black;
+.messaggio-inviato {
+    align-self: flex-end;
+    background-color: green;
+   
 }
+
+.messaggio-ricevuto {
+    align-self: flex-start;
+    background-color: white;
+}
+
+.orainviato, .oraricevuto{
+    font-size: 9px;
+    position: relative;
+}
+
+.orainviato {
+    left: 23%;
+    top: 23%
+}
+.oraricevuto {
+    left: 35%;
+    top: 23%
+}
+
+
 
 .chat-down {
-border: 1px dotted black;
+
+    border: 1px dotted black;
+    height: 10%;
+    width: 100%;
 }
 
 .chat-downleft {
-border: 1px dotted black;
+    border: 1px dotted black;
 }
 
 .chat-downmiddle {
-border: 1px dotted black;
+    border: 1px dotted black;
 }
 
 .chat-downright {
-border: 1px dotted black;
+    border: 1px dotted black;
 
 }
