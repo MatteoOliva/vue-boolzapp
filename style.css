@@ -142,6 +142,7 @@ display: flex;
     align-items: center;
     background-color: aqua;
     gap: 20px;
+    height: 9%;
 
 }
 .notificheimg {
@@ -157,7 +158,7 @@ display: flex;
 
 .barradiricerca {
     border: 1px dotted black;
-    height: 40px;
+    height: 6%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -177,26 +178,40 @@ display: flex;
 .testo {
     
 }
+
 #barradiricerca{
     height: 31px;
     width: 350px;
-
 }
 
 .listacontatti {
-    border: 1px dotted black;
+    width: 100%;
+    border: 5px dotted red;
+    overflow-y: scroll;
+    height: 85%
 }
 
-.img {
-    border: 1px dotted black;
+.listacontatti img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.contatto {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
 }
 
 .nomecontatto {
-    border: 1px dotted black;
+    
+    margin-top: 10px;
 }
 
 .dataultimomessaggio {
-    border: 1px dotted black;
+font-size: 14px;
+opacity: 0.2;
 }
 
 .chat {
@@ -244,7 +259,7 @@ display: flex;
 
 .messaggio-inviato {
     align-self: flex-end;
-    background-color: green;
+    background-color: rgb(91, 185, 91);
    
 }
 

@@ -88,9 +88,20 @@
                 </div>
 
                 <div class="listacontatti">
-                    <div class="img"><img :src="" alt=""></div>
-                    <div class="nomecontatto"></div>
-                    <div class="dataultimomessaggio"></div>
+
+                    <div class="contatto" v-for="(contact, index) in contacts">
+
+                        <div class="img"><img :src="contacts[index].avatar"  alt=""></div>
+
+                        <div class="info">
+
+                            <div class="nomecontatto">{{contacts[index].name}}</div>
+                            <div class="dataultimomessaggio"> ultimo messaggio inviato</div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
 
@@ -102,9 +113,10 @@
                 <div class="chat-up">
 
                     <div class="boxmessaggi">
-
                         
 
+                        
+<!-- 
                             <div class="messaggio-inviato">ciao come stai
                                 <span class="orainviato">orario</span>
                             </div>
@@ -143,7 +155,7 @@
 
                             <div class="messaggio-ricevuto">bene
                                 <span class="oraricevuto">orario</span>
-                            </div>
+                            </div> -->
 
                         
                     
