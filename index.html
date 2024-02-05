@@ -89,14 +89,14 @@
 
                 <div class="listacontatti">
 
-                    <div class="contatto" v-for="(contact, index) in contacts">
+                    <div class="contatto" v-for="activeContact in contacts">
 
-                        <div class="img"><img :src="contacts[index].avatar"  alt=""></div>
+                        <div class="img"><img :src="activeContact.avatar"  alt=""></div>
 
                         <div class="info">
 
-                            <div class="nomecontatto">{{contacts[index].name}}</div>
-                            <div class="dataultimomessaggio"> ultimo messaggio inviato</div>
+                            <div class="nomecontatto">{{activeContact.name}}</div>
+                            <div class="dataultimomessaggio">ultimo messaggio inviato</div>
 
                         </div>
 

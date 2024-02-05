@@ -3,14 +3,13 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            activeContact: 0,
-            contacts,
+            activeIndex: 0,
             contacts: [
                 {
                     name: 'Michele',
                     avatar: './img/avatar_1.jpg',
                     visible: true,
-                    message: [
+                    messages: [
                         {
                             date: '10/01/2020 15:30:55',
                             message: 'Hai portato a spasso il cane?',
@@ -173,8 +172,11 @@ createApp({
         }
 
     },
-
-    methods: {
-
+    computed: {
+        activeContact() {
+            return this.contacts[this.activeIndex];
+        }
     },
+
+    
 }).mount('#app')
