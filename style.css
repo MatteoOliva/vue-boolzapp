@@ -1,339 +1,335 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-#app {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    width: 80%;
-    height: 80%;
-    transform: translate(-50%, -50%);
-    font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-header  {
-border: 1px dotted black;
-background-color: rgb(219, 191, 221);
-height: 80px;
-width: 100% ;
-display: flex;
+.platform {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  font-family: "Lato", sans-serif;
+}
+
+.bodyUp {
+  background: rgb(46, 65, 57);
+  background: linear-gradient(
+    175deg,
+    rgba(46, 65, 57, 0.9332107843137255) 0%,
+    rgba(19, 149, 135, 1) 100%
+  );
+  width: 100%;
+  height: 20vh;
+}
+
+.bodyDown {
+  width: 100%;
+  height: 80vh;
+  background: rgb(46, 65, 57);
+  background: linear-gradient(
+    108deg,
+    rgba(46, 65, 57, 1) 0%,
+    rgba(252, 254, 249, 1) 100%
+  );
+}
+
+i {
+  color: rgb(182, 173, 173);
+  font-size: 25px;
+}
+.emote i {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+header {
+  background-color: rgb(217, 216, 218);
+  height: 80px;
+  width: 100%;
+  display: flex;
 }
 
 /* HEADER LEFT */
 
 .header-left {
-    border: 1px dotted black;
-    width: 35%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
 .header-leftleft {
-    display: flex;
-    height: 100%;
-    width: 50%;
-    align-items: center;
-    margin-left: 5px;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  margin-left: 5px;
 }
 
 .io {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .io-img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: 1px dotted black;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.io-img img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 .io-nome {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .header-leftright {
-    border: 1px dotted black;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 30px;
-
-
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-.header-leftright span:last-child{
-    margin-right: 20px;
+
+.header-leftright span:last-child {
+  margin-right: 20px;
 }
 
 /* HEADER RIGHT */
 
 .header-right {
-    border: 1px dotted black;
-    width: 65%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    }
-    
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .header-rightleft {
-
-    border: 1px dotted black;
-    display: flex;
-    
+  display: flex;
 }
 
 .chatimg {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    margin-left: 10px;
-        
-    }
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
 
-    .chatimg img {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-    }
+.chatimg img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
 
-    .contattochat{
-        margin-left: 20px;
-        
-    }
+.contattochat {
+  margin-left: 20px;
+}
 
 .header-rightright {
-    border: 1px dotted black;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 30px;
-    
-    
-    
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
 }
-.header-rightright span:last-child{
-    margin-right: 20px
+.header-rightright span:last-child {
+  margin-right: 20px;
 }
 
 .container {
-    margin: auto;
-    border: 3px dotted black;
-    height: 100%;
-    width: 100%;
-    display: flex;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
 }
 
 .contatti {
-    border: 1px dotted black;
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
 }
 
 .notifiche {
-    border: 1px dotted black;
-    display: flex;
-    align-items: center;
-    background-color: aqua;
-    gap: 20px;
-    height: 9%;
-
+  display: flex;
+  align-items: center;
+  background-color: rgb(76, 185, 185);
+  gap: 20px;
+  height: 9%;
 }
 .notificheimg {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px dotted black;
-    margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 25px;
+  margin-left: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.notificheimg i {
+  color: rgb(76, 185, 185);
+}
+
 .ricevinotifiche p:last-child {
-    text-decoration: underline;
+  text-decoration: underline;
+  font-size: 12px;
 }
 
 .barradiricerca {
-    border: 1px dotted black;
-    height: 6%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  background-color: rgb(217, 216, 218);
+  height: 6%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .pulsante {
-    border: 1px dotted black;
-    width: 80px;
-    height: 31px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 90px;
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
-
-#barradiricerca{
-    height: 31px;
-    width: 350px;
+#barradiricerca {
+  height: 31px;
+  width: 350px;
 }
 
 .listacontatti {
-    width: 100%;
-    border: 5px dotted red;
-    overflow-y: scroll;
-    height: 85%
+  width: 100%;
+  overflow-y: scroll;
+  height: 85%;
+  background-color: white;
 }
 
 .listacontatti img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-left: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
 .contatto {
-    display: flex;
-    margin-top: 10px;
-    gap: 20px;
-    cursor: pointer;
-    border: 1px dotted black;
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+  cursor: pointer;
 }
 
 .nomecontatto {
-    
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .dataultimomessaggio {
-font-size: 14px;
-opacity: 0.2;
+  font-size: 14px;
+  opacity: 0.2;
 }
 
 .chat {
-    border: 1px dotted black;
-    width: 65%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .chat-up {
-
-    border: 1px dotted black;
-    background-color: pink;
-    height: 92%;
-    width: 100%;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    overflow-y:scroll
-
+  background-image: url(/img/mine.jpg);
+  height: 92%;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  overflow-y: scroll;
 }
 .boxmessaggi {
-    width: 75%;
-    height: 90%;
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-    
+  width: 75%;
+  height: 90%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
 }
 
-
-.sent, .received{
-
-    border: 1px dotted black;
-    text-overflow: ellipsis;
-    height: 45px;
-    min-width: 40%;
-    border-radius: 10px;
-    text-align: center;
-    line-height: 45px;
-    margin-top: 8px;
-    
-    
+.sent,
+.received {
+  text-overflow: ellipsis;
+  height: 45px;
+  min-width: 40%;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 45px;
+  margin-top: 8px;
+  padding-left: 15px;
 }
 
 .sent {
-    align-self: flex-end;
-    background-color: rgb(91, 185, 91);
-    display: flex;
-    justify-content: space-between;   
-    
+  align-self: flex-end;
+  background-color: rgb(91, 185, 91);
+  display: flex;
+  justify-content: space-between;
 }
 
 .received {
-    align-self: flex-start;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;   
+  align-self: flex-start;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
-.orainviato, .oraricevuto{
-    font-size: 9px;
-    
-    
-    
-
-
+.orainviato,
+.oraricevuto {
+  font-size: 9px;
+  padding-right: 5px;
 }
-
-
-
-
 
 .chat-down {
-
-    border: 1px dotted black;
-    height: 8%;
-    width: 100%;
-    background-color: rgb(227, 208, 231);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  height: 8%;
+  width: 100%;
+  background-color: rgb(217, 216, 218);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .chat-downleft {
-    border: 1px dotted black;
-    width: 10%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .chat-downmiddle {
-    border: 1px dotted black;
-    width: 80%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .chat-downright {
-    border: 1px dotted black;
-    width: 10%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .digita {
-    height: 80%;
-    width: 100%;
-    border-radius: 10px;
+  height: 80%;
+  width: 100%;
+  border-radius: 10px;
 }

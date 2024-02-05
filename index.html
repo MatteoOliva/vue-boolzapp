@@ -1,131 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script text="text/javascript" src="script.js" defer></script>
-    
-    <link rel="stylesheet" href="style.css">
 
-</head>
-<body>
-
-
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="app">
+      <div class="bodyUp"></div>
+      <div class="bodyDown"></div>
+      <div class="platform">
         <header>
-
-            <div class="header-left">
-
-                <div class="header-leftleft">
-
-                    <div class="io">
-
-                        <div class="io-img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="io-nome">
-                            Sofia
-                        </div>
-
-                    </div>
-
+          <div class="header-left">
+            <div class="header-leftleft">
+              <div class="io">
+                <div class="io-img">
+                  <img src="./img/avatar_io.jpg" alt="" />
                 </div>
-
-                <div class="header-leftright">
-                    <span>i1</span>
-                    <span>i2</span>
-                    <span>i3</span>
-                </div>
-
+                <div class="io-nome">Sofia</div>
+              </div>
             </div>
 
-            <div class="header-right">
+            <div class="header-leftright">
+              <span><i class="fa-solid fa-circle-notch"></i></span>
+              <span><i class="fa-solid fa-message"></i></span>
+              <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </div>
+          </div>
 
-                <div class="header-rightleft">
-                    <div class="chatimg"><img :src="activeContact.avatar" alt=""></div>
-                    <div class="contattochat">
-                        <div class="nomecontattochat" >{{activeContact.name}}</div>
-                        <div class="ultimoaccessochat"> ultimo accesso oggi alle 12:00</div>
-                    </div>
-                    
+          <div class="header-right">
+            <div class="header-rightleft">
+              <div class="chatimg">
+                <img :src="activeContact.avatar" alt="" />
+              </div>
+              <div class="contattochat">
+                <div class="nomecontattochat">{{activeContact.name}}</div>
+                <div class="ultimoaccessochat">
+                  ultimo accesso oggi alle 12:00
                 </div>
-
-                <div class="header-rightright">
-                    <span>i1</span>
-                    <span>i2</span>
-                    <span>i3</span>
-                </div>
-
+              </div>
             </div>
 
+            <div class="header-rightright">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <span><i class="fa-solid fa-paperclip"></i></span>
+              <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </div>
+          </div>
         </header>
 
         <div class="container">
-            
-            
-            
-            <div class="contatti">
-
-                <div class="notifiche">
-                    <div class="notificheimg"><img src="" alt="notifica/"></div>
-                    <div class="ricevinotifiche">
-                        <p>Ricevi notifiche di nuovi messaggi</p>
-                        <p>attiva le notifiche desktop</p>
-                    </div>
-                    
-                </div>
-
-                <div class="barradiricerca">
-                    <div class="pulsante">i1</div>
-                    <div class="testo">
-                        <input v-model="contactsTerm" @keyUp="contactsFilter()" type="text" name="" id="barradiricerca">
-                    </div>
-                </div>
-
-                <div class="listacontatti">
-
-                    <div class="contatto" v-for="(contact, index) in contacts" @click="setActiveIndex(index)" v-show="contact.visible">
-
-                        <div class="img"><img :src="contact.avatar"  alt=""></div>
-
-                        <div class="info">
-
-                            <div class="nomecontatto">{{contact.name}}</div>
-                            <div class="dataultimomessaggio">ultimo messaggio inviato</div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
+          <div class="contatti">
+            <div class="notifiche">
+              <div class="notificheimg">
+                <i class="fa-solid fa-bell-slash"></i>
+              </div>
+              <div class="ricevinotifiche">
+                <p>Ricevi notifiche di nuovi messaggi</p>
+                <p>attiva le notifiche desktop</p>
+              </div>
             </div>
 
-            
-            <div class="chat">
+            <div class="barradiricerca">
+              <div class="pulsante">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="testo">
+                <input
+                  v-model="contactsTerm"
+                  @keyUp="contactsFilter()"
+                  type="text"
+                  name=""
+                  id="barradiricerca"
+                />
+              </div>
+            </div>
 
-                <div class="chat-up">
+            <div class="listacontatti">
+              <div
+                class="contatto"
+                v-for="(contact, index) in contacts"
+                @click="setActiveIndex(index)"
+                v-show="contact.visible"
+              >
+                <div class="img"><img :src="contact.avatar" alt="" /></div>
 
-                    <div class="boxmessaggi">
+                <div class="info">
+                  <div class="nomecontatto">{{contact.name}}</div>
+                  <div class="dataultimomessaggio">
+                    ultimo messaggio inviato
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                        <div class="messaggio" v-for="message in activeContact.messages" :class="message.status" >{{message.message}}
-                            <span class="orainviato">orario</span>
-                        </div>
+          <div class="chat">
+            <div class="chat-up">
+              <div class="boxmessaggi">
+                <div
+                  class="messaggio"
+                  v-for="message in activeContact.messages"
+                  :class="message.status"
+                >
+                  {{message.message}}
+                  <span class="orainviato">orario</span>
+                </div>
 
-                        <!-- <div class="message" v-for="message in activeContact.messages" v-show=" message.status=='received'" >{{message.message}}
+                <!-- <div class="message" v-for="message in activeContact.messages" v-show=" message.status=='received'" >{{message.message}}
                             <span class="orainviato">orario</span>
                         </div> -->
 
-                        
-
-                        
-<!-- 
+                <!-- 
                             <div class="messaggio-inviato">ciao come stai
                                 <span class="orainviato">orario</span>
                             </div>
@@ -165,40 +160,32 @@
                             <div class="messaggio-ricevuto">bene
                                 <span class="oraricevuto">orario</span>
                             </div> -->
-
-                        
-                    
-
-                </div>
-
-            </div>
-            
-                <div class="chat-down">
-
-                    <div class="chat-downleft">
-                        <div class="emote"> i1</div>
-                    </div>
-
-                    <div class="chat-downmiddle">
-                        <input v-model="newMessage.message" @keyUp.enter="sendMessage()" class="digita" type="text" >
-                    </div>
-                    
-                    <div class="chat-downright">
-                        <div class="emote"> i1</div>
-                    </div>
-
-                </div>
-            
-            
-            
+              </div>
             </div>
 
+            <div class="chat-down">
+              <div class="chat-downleft">
+                <div class="emote">
+                  <i class="fa-regular fa-face-smile"></i>
+                </div>
+              </div>
 
+              <div class="chat-downmiddle">
+                <input
+                  v-model="newMessage.message"
+                  @keyUp.enter="sendMessage()"
+                  class="digita"
+                  type="text"
+                />
+              </div>
 
+              <div class="chat-downright">
+                <div class="emote"><i class="fa-solid fa-microphone"></i></div>
+              </div>
+            </div>
+          </div>
         </div>
-
-
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
