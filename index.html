@@ -180,7 +180,7 @@
                     </div>
 
                     <div class="chat-downmiddle">
-                        <input class="digita" type="text" value="">
+                        <input v-model="newMessage.message" @keyUp.enter="sendMessage()" class="digita" type="text" >
                     </div>
                     
                     <div class="chat-downright">
