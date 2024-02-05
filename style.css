@@ -138,18 +138,49 @@ display: flex;
 
 .notifiche {
     border: 1px dotted black;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    gap: 20px;
+
+}
+.notificheimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px dotted black;
+    margin-left: 10px;
+}
+.ricevinotifiche p:last-child {
+    text-decoration: underline;
 }
 
 .barradiricerca {
     border: 1px dotted black;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .pulsante {
     border: 1px dotted black;
+    width: 80px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .testo {
-    border: 1px dotted black;
+    
+}
+#barradiricerca{
+    height: 31px;
+    width: 350px;
+
 }
 
 .listacontatti {
