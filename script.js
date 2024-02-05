@@ -4,6 +4,7 @@ createApp({
     data() {
         return {
             activeIndex: 0,
+            contactsTerm: '',
             newMessage: {
                 date: '',
                 message: '',
@@ -194,14 +195,31 @@ createApp({
             this.activeContact.messages.push(newMessage);
             setTimeout(this.sendAutomatedResponse, 1000);
         },
-        
+
         sendAutomatedResponse() {
             const newMessage = {
                 message:'ok',
                 status:'received',
             };
             this.activeContact.messages.push(newMessage);
-        }
+        },
+        contactsFilter() {
+            this.contactsTerms;
+            
+            this.contacts = this.contacts.map((contact) => {
+
+                if(contact.name.toLowerCase().includes(this.contactsTerm.toLowerCase())) {
+
+                contact.visible = true;
+
+                } else {
+
+                    contact.visible = false;
+                }
+                return contact;
+
+            });
     },
+}
 
 }).mount('#app')

@@ -83,13 +83,13 @@
                 <div class="barradiricerca">
                     <div class="pulsante">i1</div>
                     <div class="testo">
-                        <input type="text" name="" id="barradiricerca">
+                        <input v-model="contactsTerm" @keyUp="contactsFilter()" type="text" name="" id="barradiricerca">
                     </div>
                 </div>
 
                 <div class="listacontatti">
 
-                    <div class="contatto" v-for="(contact, index) in contacts" @click="setActiveIndex(index)">
+                    <div class="contatto" v-for="(contact, index) in contacts" @click="setActiveIndex(index)" v-show="contact.visible">
 
                         <div class="img"><img :src="contact.avatar"  alt=""></div>
 
