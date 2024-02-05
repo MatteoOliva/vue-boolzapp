@@ -191,8 +191,17 @@ createApp({
 
         sendMessage() {
             const newMessage = { ...this.newMessage};
-            this.activeContact.messages.push(newMessage);  
+            this.activeContact.messages.push(newMessage);
+            setTimeout(this.sendAutomatedResponse, 1000);
         },
+        
+        sendAutomatedResponse() {
+            const newMessage = {
+                message:'ok',
+                status:'received',
+            };
+            this.activeContact.messages.push(newMessage);
+        }
     },
 
 }).mount('#app')
