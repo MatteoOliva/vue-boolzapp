@@ -113,6 +113,15 @@
                 <div class="chat-up">
 
                     <div class="boxmessaggi">
+
+                        <div class="messaggio" v-for="message in activeContact.messages" :class="message.status" >{{message.message}}
+                            <span class="orainviato">orario</span>
+                        </div>
+
+                        <!-- <div class="message" v-for="message in activeContact.messages" v-show=" message.status=='received'" >{{message.message}}
+                            <span class="orainviato">orario</span>
+                        </div> -->
+
                         
 
                         
@@ -171,7 +180,7 @@
                     </div>
 
                     <div class="chat-downmiddle">
-                        <input class="digita" type="text" value="Scrivi un messaggio">
+                        <input class="digita" type="text" value="">
                     </div>
                     
                     <div class="chat-downright">

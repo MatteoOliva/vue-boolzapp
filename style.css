@@ -251,7 +251,7 @@ opacity: 0.2;
 }
 
 
-.messaggio-inviato, .messaggio-ricevuto{
+.sent, .received{
 
     border: 1px dotted black;
     text-overflow: ellipsis;
@@ -265,30 +265,31 @@ opacity: 0.2;
     
 }
 
-.messaggio-inviato {
+.sent {
     align-self: flex-end;
     background-color: rgb(91, 185, 91);
-   
+    display: flex;
+    justify-content: space-between;   
+    
 }
 
-.messaggio-ricevuto {
+.received {
     align-self: flex-start;
     background-color: white;
+    display: flex;
+    justify-content: space-between;   
 }
 
 .orainviato, .oraricevuto{
     font-size: 9px;
-    position: relative;
+    
+    
+    
+
+
 }
 
-.orainviato {
-    left: 23%;
-    top: 23%
-}
-.oraricevuto {
-    left: 35%;
-    top: 23%
-}
+
 
 
 
